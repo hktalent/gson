@@ -8,3 +8,15 @@ A tiny JSON lib to read and alter a JSON value. The data structure is lazy, it's
 
 # New features
 - use github.com/json-iterator/go Improve performance
+
+# Example
+```go
+obj := gson.NewFrom(`{"a": {"b": [1, 2]}}`)
+
+fmt.Println(obj.Get("a.b.0").Int())
+
+obj.Set("a.b.1", "ok").Set("c", 2)
+obj.Del("c")
+fmt.Println(">", obj.JSON("> ", "  "))
+
+```
