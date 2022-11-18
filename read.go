@@ -2,7 +2,6 @@ package gson
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
 	"reflect"
 	"regexp"

@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ysmood/gson"
+	"github.com/hktalent/gson"
 )
 
 func ExampleJSON() {

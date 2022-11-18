@@ -1,11 +1,13 @@
 package gson
 
 import (
-	"encoding/json"
+	jsoniter "github.com/json-iterator/go"
 	"io"
 	"reflect"
 	"sync"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 // New JSON from []byte, io.Reader, or raw value.
 func New(v interface{}) JSON {
